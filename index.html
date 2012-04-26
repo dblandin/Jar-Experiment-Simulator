@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<!-- Marble Jar Experiment Runner
+	 by Devon Blandin, April 2012
+	 for IT 238, Spring Quarter 2012      -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Marble Jar Experiment Runner</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="marblejar.js"></script>
+	<script src="main.js"></script>
+	<script src="https://www.google.com/jsapi?callback=loadGoogleAPIs&key=ABQIAAAA-HgkQ3h85RC9grgGQsrSnhSP5c0xxhF7kkwus1Uc2hzPhLJBLxTWfP5nbXo7i4gExC2Q7K1TO0kBJg"></script>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1><a href="http://devonblandin">Devon Code Shop</a> | IT 238 Assignments</h1>
+	</header>
+	<section id="main">
+		<h1><a href="http://facsrv.cs.depaul.edu/~cmiller/it238/assn2.html">Assignment 2</a>: Jar Experiment Runner</h1>
+		<noscript class="error">Enable Javascript to use this tool.</noscript>
+		<div class="formRow">
+			<label for="numExperiments">Number of times to run experiment:</label>
+		  	<input type="text" id="numExperiments" value=10 />
+		</div>
+		<div class="formRow">
+			<label for="numDraws">Number of draws:</label>
+		  	<input type="text" id="numDraws" value=2 />
+		  		
+		</div>
+		<div class="formRow">
+			<label for="numWhite">Number of white marbles in jar:</label>
+		  	<input type="text" id="numWhite" value=10 />
+		</div>
+		<div class="formRow">
+			<label for="numBlack">Number of black marbles in jar:</label>
+		  	<input type="text" id="numBlack" value=10 />
+		</div>
+		<input type="button" value="Run Experiment" id="runExperimentButton" disabled />
+		<p id="probability"></p>
+		<br>
+		<p id="result"></p>
+		<div id="resultChart"></div>
+	</section>
+	<section id="sidebar">
+		<div id="distributionChart"></div>
+		<div id="probabilityChart"></div>
+	</section>
+</body>
+</html>
